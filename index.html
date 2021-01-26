@@ -10,10 +10,11 @@
 </style>
 </head>
 <body>
-<body style ="background:url(bee.jpg);background-size:127% 127%;">
+<body style ="background:url(Bee.jpg);background-size:127% 127%;">
 <h1>time id="time"></time></h1>
 <h2>What do you want to do ?</h2>
 <h2 id="goal" contenteditable="true"></h2>
+<style>
 <script>const time = document.getElementById('time'),greeting = document.getElementById('greeting'),name = document.getElementById('name'),focus = document.getElementById('goal');const showAmPm = true;
 function showTime() {let today = new Date(),hour = today.getHours(),min = today.getMinutes(),sec = today.getSeconds();const amPm = hour >= 12 ? 'PM' : 'AM';hour = hour % 12 || 12;time.innerHTML = `${hour}<span>:</span>${addZero(min)}<span>:</span>${addZero(sec)} ${showAmPm ? amPm : ''}`;setTimeout(showTime, 1000);}function addZero(n) {return (parseInt(n, 10) < 10 ? '0' : '') + n;}
 function setBgGreet(){let today = new Date(),hour = today.getHours();if (hour < 12) {document.body.style.backgroundImage = "url(''//https://www.hdnicewallpapers.com/Walls/Normal/Bee/Bee_in_Orange_Flower_Photo.jpg')";greeting.textContent = 'Good Morning, ';greeting.body.style.color = 'LimeGreen';} else if (hour < 18) {document.body.style.backgroundImage = "url('https://www.hdnicewallpapers.com/Walls/Normal/Bee/Bee_in_Orange_Flower_Photo.jpg')";
