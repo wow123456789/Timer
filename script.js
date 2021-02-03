@@ -1,17 +1,9 @@
-const time = document.getElementById('time'),
-  greeting = document.getElementById('greeting'),
+greeting = document.getElementById('greeting'),
   name = document.getElementById('name'),
   focus = document.getElementById('focus');
 
 // Options
 const showAmPm = true;
-
-// Show Time
-function showTime() {
-  let today = new Date(),
-    hour = today.getHours(),
-    min = today.getMinutes(),
-    sec = today.getSeconds();
 
   // Set AM or PM
   const amPm = hour >= 12 ? 'PM' : 'AM';
@@ -76,12 +68,6 @@ name.addEventListener('keypress', setName);
 name.addEventListener('blur', setName);
 focus.addEventListener('keypress', setFocus);
 focus.addEventListener('blur', setFocus);
-
-var myVar = setInterval(myTimer, 1000);
-function myTimer() {
-  var d = new Date();
-  document.getElementById("demo").innerHTML = d.toLocaleTimeString();}
-
   // Run
 setBgGreet();
 getName();
