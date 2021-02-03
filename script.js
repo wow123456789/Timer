@@ -83,7 +83,6 @@ function myTimer() {
   document.getElementById("demo").innerHTML = d.toLocaleTimeString();}
 
   // Run
-showTime();
 setBgGreet();
 getName();
 getFocus();
